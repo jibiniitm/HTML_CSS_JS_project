@@ -27,6 +27,7 @@
   
 <div id="menu">
 
+<!-- javascript:void(0) used with <a> creates a hyperlink that doesn't perform any action when clicked. It effectively prevents the browser from navigating to a new page -->
 
     <div id="tab">        
             <div class="tab-item"><a href="javascript:void(0)" onclick="openMenu(event, 'Main_course');" id="myLink" class="intab">Main Course</a></div>
@@ -239,10 +240,10 @@
             357453531045145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDfCsDIxJzI2LjgiTiA4wrAzMSc0OS42IkU!5e0!3m2!1sen!
             2sin!4v1704021754970!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
             referrerpolicy="no-referrer-when-downgrade"></iframe> <br><br> <br><br><br><br><br><br>
-            <p style="color: white; font-family: 'Lucida Sans';">Connect with us: &nbsp;&nbsp;&nbsp;<i class="fa fa-twitter" style="font-size:40px;color:lightblue;
-            text-shadow:2px 2px 4px #000000;"></i> &nbsp;&nbsp;&nbsp;
-                <i class="fa fa-facebook" style="font-size:40px;color:rgb(8, 189, 249);text-shadow:2px 2px 4px #000000;"></i>&nbsp;&nbsp;&nbsp;
-                <i class="fa fa-instagram" style="font-size:40px;color:orange;text-shadow:2px 2px 4px #000000;"></i> </p>                            
+            <p style="color: white; font-family: 'Lucida Sans';">Connect with us: &nbsp;&nbsp;&nbsp; <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa fa-twitter" style="font-size:40px;color:lightblue;
+                text-shadow:2px 2px 4px #000000;"></i></a> &nbsp;&nbsp;&nbsp;
+             <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" style="font-size:40px;color:rgb(8, 189, 249);text-shadow:2px 2px 4px #000000;"></i></a>   &nbsp;&nbsp;&nbsp;
+                <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa fa-instagram" style="font-size:40px;color:orange;text-shadow:2px 2px 4px #000000;"></i></a> </p>                            
         </div>            
 
         <div class="grid-item2"> 
@@ -312,7 +313,7 @@
 
     <script>
         // Tabbed Menu
-        function openMenu(evt, menuName) {
+        function openMenu(event, menuName) {
           var i, x;
           x = document.getElementsByClassName("menu");
           for (i = 0; i < x.length; i++) {
